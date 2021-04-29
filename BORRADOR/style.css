@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: 'Avenir';
+  font-size:100%;
+  line-height:1.5;
+ box-sizing: border-box;
+}
+.example-item {
+    padding: 1em;
+    border-radius: 5px;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.example-item_img{
+    transform: translate(-8em, 4em);
+    width: 82px;
+    height: 82px;
+}
+
+.l-grid-half {
+  width: 50%;
+}
+
+.container {
+  /* //by having a parent with flex-direction:row, the min-height bug in IE doesn't stick around. */
+  display:flex;
+  flex-direction:row;
+  
+}
+.l-flex-child-left{
+  padding:1em;
+  min-height: 100vh;
+  align-items: center;
+  display:start; 
+  text-align: left;
+  /* //if you have items within the child you'll need to make it display flex */
+  justify-content: center;
+  flex-direction: row;
+  
+}
+
+.l-flex-child-right{
+    min-height: 100vh;
+    align-items: center;
+    display: flex; 
+    text-align: left;
+    /* //if you have items within the child you'll need to make it display flex */
+    justify-content: center;
+    flex-direction: row;
+    background-color: black;
+  
+    
+  }
+.t-purple {
+  background-color: #FBEFEC;
+  color:#fff;
+}
+.t-white {
+  background-color: #fff;
+  color: #EC552F;
+}
+.t-white .example-item {
+  
+  color: #EC552F;
+}
+
+.t-purple .example-item {
+  
+  color:#000;
+
+}
+.btn-login{
+    cursor: pointer;
+    background-color: #215E99;
+    color: white;
+    width: 374px;
+    height: 52px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+
+}
+.btn-login:hover{
+    background-color: violet;
+
+}
+
+/* esto es para los icons
+.pupu{
+    width: algopx;
+    heitgh: algopx;
+    display: flex;
+    justify-content: space-around;
+    aling-item: space-around
+    } */
